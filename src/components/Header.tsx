@@ -13,10 +13,11 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="text-white text-xl font-bold flex items-center">
-            <div className="w-8 h-8 bg-blue-500 rounded mr-3 flex items-center justify-center">
-              <span className="text-white font-bold">J</span>
+            <div className="w-8 h-8 bg-gradient-to-br from-green-400 to-blue-500 rounded mr-3 flex items-center justify-center">
+              <span className="text-black font-bold text-xs">DS</span>
             </div>
-            Jaydeep
+            <span className="text-green-400">Daniel SDG</span>
+            <span className="text-gray-400 text-sm ml-2 font-mono">.sec</span>
           </div>
 
           {/* Desktop Navigation */}
