@@ -1,10 +1,10 @@
 const About = () => {
   return (
-    <section id="about" className="py-20 px-6 bg-gray-900 relative">
+    <section id="about" className="py-16 sm:py-20 px-4 sm:px-6 bg-gray-900 relative">
       {/* Simplified Background */}
       <div className="absolute inset-0 opacity-5">
         <div className="flex justify-between h-full">
-          {[...Array(10)].map((_, i) => (
+          {[...Array(8)].map((_, i) => (
             <div key={i} className="text-green-400 font-mono text-xs">
               {i % 2 === 0 ? '1' : '0'}
             </div>
@@ -14,17 +14,17 @@ const About = () => {
 
       <div className="container mx-auto relative z-10">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-12 sm:mb-16">
           <div className="text-green-400 font-mono text-sm mb-4">
             <span className="text-white">$</span> cat /about/daniel_sdg.txt
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4">
             <span className="text-green-400">{'>'}</span> About Me
           </h2>
           <div className="w-20 h-1 bg-green-400 mx-auto mb-6"></div>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Text Content */}
           <div className="space-y-8">
             {/* Terminal-style bio */}

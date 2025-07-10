@@ -79,11 +79,11 @@ const Contact = () => {
   ]
 
   return (
-    <section id="contact" className="py-20 px-6 bg-black relative">
+    <section id="contact" className="py-16 sm:py-20 px-4 sm:px-6 bg-black relative">
       {/* Minimal Background */}
       <div className="absolute inset-0 opacity-3">
-        <div className="grid grid-cols-6 gap-8 h-full">
-          {[...Array(18)].map((_, i) => (
+        <div className="grid grid-cols-4 sm:grid-cols-6 gap-8 h-full">
+          {[...Array(12)].map((_, i) => (
             <div key={i} className="text-green-400 font-mono text-xs">
               {i % 4 === 0 ? '1' : '0'}
             </div>
@@ -94,20 +94,20 @@ const Contact = () => {
       <div className="container mx-auto relative z-10">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-12 sm:mb-16">
             <div className="text-green-400 font-mono text-sm mb-4">
               <span className="text-white">$</span> cat /contact/secure_channels.txt
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4">
               <span className="text-green-400">{'>'}</span> Secure Contact
             </h2>
             <div className="w-20 h-1 bg-green-400 mx-auto mb-6"></div>
-            <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+            <p className="text-gray-400 text-sm sm:text-base lg:text-lg max-w-2xl mx-auto">
               Ready to collaborate on cybersecurity projects or need security consultation? Let's establish a secure communication channel.
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
             {/* Contact Information */}
             <div className="space-y-8">
               <div>

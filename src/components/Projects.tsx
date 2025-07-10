@@ -82,11 +82,11 @@ const Projects = () => {
   }
 
   return (
-    <section id="projects" className="py-20 px-6 bg-black relative">
+    <section id="projects" className="py-16 sm:py-20 px-4 sm:px-6 bg-black relative">
       {/* Simplified Background */}
       <div className="absolute inset-0 opacity-3">
-        <div className="grid grid-cols-8 gap-6 h-full">
-          {[...Array(32)].map((_, i) => (
+        <div className="grid grid-cols-6 sm:grid-cols-8 gap-6 h-full">
+          {[...Array(24)].map((_, i) => (
             <div key={i} className="text-green-400 font-mono text-xs animate-pulse" style={{ animationDelay: `${i * 0.3}s` }}>
               {i % 3 === 0 ? '1' : '0'}
             </div>
@@ -96,21 +96,21 @@ const Projects = () => {
 
       <div className="container mx-auto relative z-10">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-12 sm:mb-16">
           <div className="text-green-400 font-mono text-sm mb-4">
             <span className="text-white">$</span> ls /projects/security/
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4">
             <span className="text-green-400">{'>'}</span> Security Projects
           </h2>
           <div className="w-20 h-1 bg-green-400 mx-auto mb-6"></div>
-          <p className="text-gray-400 max-w-2xl mx-auto">
+          <p className="text-gray-400 max-w-2xl mx-auto text-sm sm:text-base">
             A collection of cybersecurity tools and applications I've developed to enhance digital security.
           </p>
         </div>
 
         {/* Projects Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {projects.map((project) => (
             <div
               key={project.id}

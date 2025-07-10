@@ -36,11 +36,11 @@ const Skills = () => {
   ]
 
   return (
-    <section id="skills" className="py-20 px-6 bg-gray-900 relative">
+    <section id="skills" className="py-16 sm:py-20 px-4 sm:px-6 bg-gray-900 relative">
       {/* Simplified Background Pattern */}
       <div className="absolute inset-0 opacity-5">
-        <div className="grid grid-cols-10 gap-4 h-full">
-          {[...Array(50)].map((_, i) => (
+        <div className="grid grid-cols-6 sm:grid-cols-10 gap-4 h-full">
+          {[...Array(30)].map((_, i) => (
             <div key={i} className="text-green-400 font-mono text-xs animate-pulse" style={{ animationDelay: `${i * 0.2}s` }}>
               {i % 2 === 0 ? '1' : '0'}
             </div>
@@ -50,21 +50,21 @@ const Skills = () => {
 
       <div className="container mx-auto relative z-10">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-12 sm:mb-16">
           <div className="text-green-400 font-mono text-sm mb-4">
             <span className="text-white">$</span> cat /skills/expertise.json
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4">
             <span className="text-green-400">{'>'}</span> Technical Arsenal
           </h2>
           <div className="w-20 h-1 bg-green-400 mx-auto mb-6"></div>
-          <p className="text-gray-400 max-w-2xl mx-auto">
+          <p className="text-gray-400 max-w-2xl mx-auto text-sm sm:text-base">
             A comprehensive overview of my cybersecurity expertise and development skills.
           </p>
         </div>
 
         {/* Skills Grid */}
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {skillCategories.map((category) => (
             <div
               key={category.title}

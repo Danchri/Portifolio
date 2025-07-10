@@ -262,24 +262,24 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-black opacity-80" />
 
       {/* Content */}
-      <div className="relative z-10 min-h-screen flex items-center justify-center pt-20 px-6">
+      <div className="relative z-10 min-h-screen flex items-center justify-center pt-20 px-4 sm:px-6">
         <div className="container mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Left Content */}
-            <div className="space-y-8">
+            <div className="space-y-6 lg:space-y-8 text-center lg:text-left">
               {/* Terminal-style intro */}
               <div className="space-y-4">
                 <div className="text-green-400 font-mono text-sm">
                   <span className="text-white">$</span> whoami
                 </div>
-                <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight">
+                <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-white leading-tight">
                   Hi, I'm <span className="text-green-400">Daniel SDG</span>
                 </h1>
-                <div className="text-xl lg:text-2xl text-gray-300">
+                <div className="text-lg sm:text-xl lg:text-2xl text-gray-300">
                   I'm a <span className="text-blue-400 font-semibold">{text}</span>
                   <span className="animate-pulse text-green-400">|</span>
                 </div>
-                <p className="text-gray-400 text-lg max-w-lg leading-relaxed">
+                <p className="text-gray-400 text-base sm:text-lg max-w-lg mx-auto lg:mx-0 leading-relaxed">
                   Passionate about securing digital infrastructures and building robust applications.
                   I specialize in penetration testing, vulnerability assessment, and full-stack development.
                 </p>
@@ -290,7 +290,7 @@ const Hero = () => {
                 <div className="text-green-400 font-mono text-sm">
                   <span className="text-white">$</span> cat specializations.txt
                 </div>
-                <div className="grid grid-cols-2 gap-2 text-sm font-mono">
+                <div className="grid grid-cols-2 gap-2 text-sm font-mono max-w-md mx-auto lg:mx-0">
                   <div className="text-gray-300">• Ethical Hacking</div>
                   <div className="text-gray-300">• Web Security</div>
                   <div className="text-gray-300">• React/Node.js</div>
@@ -299,10 +299,10 @@ const Hero = () => {
               </div>
 
               {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 pt-4">
+              <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center lg:justify-start">
                 <a
                   href="#projects"
-                  className="px-8 py-3 bg-green-500 hover:bg-green-400 text-black font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center"
+                  className="px-6 sm:px-8 py-3 bg-green-500 hover:bg-green-400 text-black font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center text-sm sm:text-base"
                 >
                   <span>View Projects</span>
                   <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -311,7 +311,7 @@ const Hero = () => {
                 </a>
                 <a
                   href="#contact"
-                  className="px-8 py-3 border-2 border-green-500 text-green-400 hover:bg-green-500 hover:text-black font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center"
+                  className="px-6 sm:px-8 py-3 border-2 border-green-500 text-green-400 hover:bg-green-500 hover:text-black font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center text-sm sm:text-base"
                 >
                   <span>Get In Touch</span>
                   <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -322,33 +322,33 @@ const Hero = () => {
             </div>
 
             {/* Right Content - Terminal Navigation */}
-            <div className="flex justify-center lg:justify-end">
+            <div className="flex justify-center lg:justify-end mt-8 lg:mt-0">
               <div className="relative">
                 {/* Interactive Terminal Container */}
                 <div
-                  className="w-96 h-96 bg-black rounded-lg border border-green-500/50 overflow-hidden shadow-2xl cursor-text"
+                  className="w-full max-w-md sm:max-w-lg lg:w-[450px] xl:w-[500px] h-96 sm:h-[450px] lg:h-[500px] bg-black rounded-lg border border-green-500/50 overflow-hidden shadow-2xl cursor-text"
                   onClick={focusTerminal}
                 >
                   {/* Terminal Header */}
-                  <div className="flex items-center justify-between bg-gray-800 px-4 py-2 border-b border-green-500/30">
+                  <div className="flex items-center justify-between bg-gray-800 px-3 sm:px-4 py-2 border-b border-green-500/30">
                     <div className="flex space-x-2">
                       <div className="w-3 h-3 bg-red-500 rounded-full"></div>
                       <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
                       <div className="w-3 h-3 bg-green-500 rounded-full"></div>
                     </div>
-                    <div className="text-green-400 text-sm font-mono">daniel_sdg@security:~$</div>
-                    <div className="w-16"></div>
+                    <div className="text-green-400 text-xs sm:text-sm font-mono truncate">daniel_sdg@security:~$</div>
+                    <div className="w-8 sm:w-16"></div>
                   </div>
 
                   {/* Terminal Content */}
                   <div
                     ref={terminalRef}
-                    className="p-4 h-80 font-mono text-sm overflow-y-auto scrollbar-thin scrollbar-thumb-green-500 scrollbar-track-gray-800"
+                    className="p-4 sm:p-5 h-80 sm:h-96 lg:h-[420px] font-mono text-xs sm:text-sm overflow-y-auto scrollbar-thin scrollbar-thumb-green-500 scrollbar-track-gray-800"
                   >
                     {/* Terminal History */}
                     <div className="space-y-1">
                       {terminalHistory.map((line, index) => (
-                        <div key={index} className="text-gray-300">
+                        <div key={index} className="text-gray-300 break-words">
                           {line.startsWith('$') ? (
                             <span className="text-green-400">{line}</span>
                           ) : line.startsWith('●') ? (
@@ -365,15 +365,15 @@ const Hero = () => {
 
                       {/* Current Input Line */}
                       <div className="flex items-center text-green-400">
-                        <span className="text-white mr-2">$</span>
+                        <span className="text-white mr-1 sm:mr-2">$</span>
                         <input
                           ref={inputRef}
                           type="text"
                           value={currentCommand}
                           onChange={(e) => setCurrentCommand(e.target.value)}
                           onKeyDown={handleKeyPress}
-                          className="bg-transparent border-none outline-none text-green-400 font-mono flex-1 caret-green-400"
-                          placeholder="Type 'help' for commands..."
+                          className="bg-transparent border-none outline-none text-green-400 font-mono flex-1 caret-green-400 text-xs sm:text-sm"
+                          placeholder="Type 'help'..."
                           autoFocus
                         />
                         <span className="animate-pulse">_</span>
@@ -383,17 +383,19 @@ const Hero = () => {
                 </div>
 
                 {/* Floating Security Indicators */}
-                <div className="absolute -top-4 -right-4 bg-black border border-green-500 rounded-lg p-2">
+                <div className="absolute -top-3 -right-3 bg-black border border-green-500 rounded-lg p-1 sm:p-2">
                   <div className="text-green-400 text-xs font-mono flex items-center">
-                    <span className="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></span>
-                    SECURE
+                    <span className="w-2 h-2 bg-green-400 rounded-full mr-1 sm:mr-2 animate-pulse"></span>
+                    <span className="hidden sm:inline">SECURE</span>
+                    <span className="sm:hidden">SEC</span>
                   </div>
                 </div>
 
-                <div className="absolute -bottom-4 -left-4 bg-black border border-blue-500 rounded-lg p-2">
+                <div className="absolute -bottom-3 -left-3 bg-black border border-blue-500 rounded-lg p-1 sm:p-2">
                   <div className="text-blue-400 text-xs font-mono flex items-center">
-                    <span className="w-2 h-2 bg-blue-400 rounded-full mr-2 animate-pulse"></span>
-                    ONLINE
+                    <span className="w-2 h-2 bg-blue-400 rounded-full mr-1 sm:mr-2 animate-pulse"></span>
+                    <span className="hidden sm:inline">ONLINE</span>
+                    <span className="sm:hidden">ON</span>
                   </div>
                 </div>
               </div>
