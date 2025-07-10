@@ -84,14 +84,15 @@ const Hero = () => {
     contacts: () => [
       'Contact Information:',
       '',
-      'Email (Secure): daniel.sdg@protonmail.com',
-      'LinkedIn: linkedin.com/in/danielsdg',
-      'GitHub: github.com/danielsdg',
-      'Signal: Available upon request',
+      'Email: dantech1438@gmail.com',
+      'Phone: +254790554926 / +254706039116',
+      'LinkedIn: www.linkedin.com/in/daniel-mburu-826229244',
+      'GitHub: https://github.com/danchri',
+      'X (Twitter): @CyberSDG',
       '',
       'Response Time: Usually within 24 hours',
       'Availability: Open for cybersecurity consulting',
-      'Encryption: PGP key available upon request'
+      'Location: Kenya (Remote work available)'
     ],
     experience: () => [
       'Professional Experience:',

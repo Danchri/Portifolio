@@ -37,36 +37,44 @@ const Contact = () => {
 
   const contactMethods = [
     {
-      icon: '🔐',
-      title: 'Secure Email',
-      description: 'PGP encrypted communication',
-      contact: 'daniel.sdg@protonmail.com',
+      icon: '📧',
+      title: 'Email',
+      description: 'Primary communication',
+      contact: 'dantech1438@gmail.com',
       link: 'mailto:dantech1438@gmail.com',
-      status: 'Encrypted'
+      status: 'Active'
+    },
+    {
+      icon: '📱',
+      title: 'Phone',
+      description: 'Direct contact',
+      contact: '+254790554926',
+      link: 'tel:+254790554926',
+      status: 'Available'
     },
     {
       icon: '💼',
       title: 'LinkedIn',
       description: 'Professional network',
-      contact: 'linkedin.com/in/danielsdg',
-      link: 'https://linkedin.com/in/danielsdg',
+      contact: 'daniel-mburu-826229244',
+      link: 'https://www.linkedin.com/in/daniel-mburu-826229244',
       status: 'Verified'
     },
     {
       icon: '🐙',
       title: 'GitHub',
       description: 'Security research & code',
-      contact: 'github.com/danielsdg',
+      contact: 'github.com/danchri',
       link: 'https://github.com/danchri',
       status: 'Active'
     },
     {
-      icon: '🔒',
-      title: 'Signal',
-      description: 'End-to-end encrypted messaging',
-      contact: '+254790554926',
-      link: '#',
-      status: 'Secure'
+      icon: '🐦',
+      title: 'X (Twitter)',
+      description: 'Cybersecurity updates',
+      contact: '@CyberSDG',
+      link: 'https://twitter.com/CyberSDG',
+      status: 'Active'
     }
   ]
 
