@@ -65,7 +65,7 @@ const Skills = () => {
 
         {/* Skills Grid */}
         <div className="grid md:grid-cols-3 gap-8">
-          {skillCategories.map((category, categoryIndex) => (
+          {skillCategories.map((category) => (
             <div
               key={category.title}
               className="bg-black border border-green-500/30 rounded-lg p-6 hover:border-green-400 transition-colors duration-200"
@@ -81,7 +81,7 @@ const Skills = () => {
 
               {/* Skills List */}
               <div className="space-y-4">
-                {category.skills.map((skill, skillIndex) => (
+                {category.skills.map((skill) => (
                   <div key={skill.name} className="space-y-2">
                     <div className="flex justify-between items-center">
                       <div className="flex items-center">

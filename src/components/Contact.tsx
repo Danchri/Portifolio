@@ -41,7 +41,7 @@ const Contact = () => {
       title: 'Secure Email',
       description: 'PGP encrypted communication',
       contact: 'daniel.sdg@protonmail.com',
-      link: 'mailto:daniel.sdg@protonmail.com',
+      link: 'mailto:dantech1438@gmail.com',
       status: 'Encrypted'
     },
     {
@@ -57,14 +57,14 @@ const Contact = () => {
       title: 'GitHub',
       description: 'Security research & code',
       contact: 'github.com/danielsdg',
-      link: 'https://github.com/danielsdg',
+      link: 'https://github.com/danchri',
       status: 'Active'
     },
     {
       icon: '🔒',
       title: 'Signal',
       description: 'End-to-end encrypted messaging',
-      contact: '+1-XXX-XXX-XXXX',
+      contact: '+254790554926',
       link: '#',
       status: 'Secure'
     }
